@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.news.newsreports">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/news"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/news"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Separate_Category"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".Separate_News_Item"
+            android:label="@string/title_activity_separate__news__item"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Splash_Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
